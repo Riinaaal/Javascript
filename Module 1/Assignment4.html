@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 4</title>
+</head>
+<body>
+<p id = "target"></p>
+<script>
+  'use strict';
+  const name = prompt('Type your name:');
+
+  function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  let house = getRandomIntInclusive(1,4)
+
+  if (house === 1) {
+      document.querySelector('#target').innerHTML = name + ', you are Gryffindor.';
+  } else if (house === 2) {
+    document.querySelector('#target').innerHTML = name + ', you are Slytherin.';
+  } else if (house === 3) {
+    document.querySelector('#target').innerHTML = name + ', you are Hufflepuff.';
+  } else {
+    document.querySelector('#target').innerHTML = name + ', you are Ravenclaw.';
+  }
+
+
+</script>
+
+</body>
+</html>

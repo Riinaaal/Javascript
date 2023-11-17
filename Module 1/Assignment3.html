@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+</head>
+<body>
+<p id = "target"></p>
+<script>
+    'use strict';
+    let num1 = parseInt(prompt('Enter first number:'));
+    let num2 = parseInt(prompt('Enter first number:'));
+    let num3 = parseInt(prompt('Enter first number:'));
+
+    const sum = num1 + num2 + num3;
+    const product = num1 * num2 * num3;
+    const average = sum / 3;
+
+    document.querySelector('#target').innerHTML = 'The sum of the numbers is ' + sum +
+    ' <br> The product of the numbers is ' + product + ' <br> The average of the numbers is ' + average;
+
+</script>
+
+</body>
+</html>

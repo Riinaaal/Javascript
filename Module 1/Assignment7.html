@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 7</title>
+</head>
+<body>
+<p id = "target"></p>
+
+<script>
+  'use strict';
+  const answer = parseFloat(prompt('How many dice rolls?'));
+
+  function rollDice() {
+    return 1 + Math.floor(Math.random() * 6);
+  }
+
+  let sum = 0;
+  for (let i = 1; i <= answer; i++) {
+    let roll = rollDice();
+    sum = sum + roll;
+    console.log(roll)
+  }
+
+  document.querySelector('#target').innerHTML = 'Sum of ' + answer + ' dice rolls is ' + sum;
+
+
+
+</script>
+
+</body>
+</html>

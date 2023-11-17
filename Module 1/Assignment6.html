@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 6</title>
+</head>
+<body>
+<p id = "target"></p>
+
+<script>
+  'use strict';
+  const answer = confirm('Should i calculate the square root?');
+
+
+   	if (answer === true) {
+
+        const number = parseInt(prompt('Enter the number: '))
+        if (number < 0) {
+          document.querySelector('#target').innerHTML = 'The square root of negative number is not defined!';
+        } else {
+          let result = Math.sqrt(number)
+          document.querySelector('#target').innerHTML = 'Square root of ' + number + ' is ' + result ;
+        }
+ 	} else {
+  	    document.querySelector('#target').innerHTML = 'The square root is not calculated.';
+    }
+
+
+
+</script>
+
+</body>
+</html>
