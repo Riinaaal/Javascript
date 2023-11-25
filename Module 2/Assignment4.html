@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  let numbers = []
+
+  let i = 0;
+  for (;;) {
+    numbers[i] = parseInt(prompt('Enter a number:'));
+    if (numbers[i] === 0) {
+      break;
+    }
+    i++;
+  }
+
+
+  sorted_num = numbers.sort((a,b) => a-b);
+  reversed_num = sorted_num.reverse();
+  for (let i = 0; i < reversed_num.length; i++) {
+    console.log(reversed_num[i]);
+  }
+</script>
+
+</body>
+</html>

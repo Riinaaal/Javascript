@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="numbers">
+</ul>
+<script>
+  function diceRoll(sides){
+    return 1 + Math.floor(Math.random() * sides);
+  }
+
+  let sides = parseInt(prompt('Enter how many sides dice has:'))
+  let list = document.getElementById("numbers");
+  let roll = 0;
+  while ( roll !== sides) {
+    roll = diceRoll(sides);
+    const li = document.createElement('li');
+    li.innerText = roll;
+    list.appendChild(li);
+
+  }
+
+</script>
+
+</body>
+</html>
